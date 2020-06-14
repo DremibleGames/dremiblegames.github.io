@@ -1,0 +1,111 @@
+<html>
+
+  <meta name="viewport" content="width=device-w   idth, initial-scale=1.0">
+
+  <head>
+    <h1>
+      Dremible Games
+    </h1>
+  </head>
+  <p class="simple-text">See the games:</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpUl1GU2T_b8-nwTz1RXMtLI-TgeYuMV5dTyhcjB-EE2sQeLYc&s" class="game-img" >
+
+  <style>
+    h1 {
+      font-family: sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    .game-img {
+      position: absolute;
+      left: 50px;
+      top: 125px;
+      transition: transform 0.5s;
+      border-radius: 10px;
+    }
+
+    .game-img:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+    .main-text, .simple-text {
+      position: absolute;
+      font-family: sans-serif;
+      text-align: left;
+      left:20px;
+      transform: scale(1.1,1.1);
+      color: white;
+      transition: transform 0.5s;
+    }
+
+    .main-text:hover, .simple-text:hover {
+      transform: scale(1.3, 1.3);
+    }
+
+    .main-text:active {
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      height: 100%;
+      transform: scale(1.5, 1.5);
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 3px;
+      background-color: green;
+      color: white;
+    }
+
+    .contacts-text {
+      text-align: center;
+      font-family: sans-serif;
+      position: relative;
+      top: 0;
+      transition: top 0.5s;
+      transform: scale(1.2,1.2);
+    }
+
+    .contacts-button {
+      position: relative;
+      left: 44%;
+      top: 0;
+      transition: top 0.5s;
+      transform: scale(1.2,1.2);
+
+      padding: 4px;
+      border: none;
+      background-color: #404040;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .contacts-text:hover, .contacts-button:hover {
+      position: relative;
+      top: -5px;
+    }
+
+    body {
+      background-color: #32a852;
+    }
+
+  </style>
+
+  <footer>
+    <p class="contacts-text">Contacts</p>
+    <button onclick="copyEmail()" class="contacts-button">dremible.games@gmail.com</button>
+  </footer>
+
+</html>
+
+<script>
+  function copyEmail() {
+   var copyText = "dremible.games@gmail.com";
+   document.execCommand("copy");
+   alert("Email copied!");
+  }
+</script>
